@@ -1,0 +1,54 @@
+{
+  "concepts": [
+    "O(1) → Constant: doesn't grow with input",
+    "O(log n) → Logarithmic: halves problem each step",
+    "O(n) → Linear: one pass through input",
+    "O(n log n) → Linearithmic: efficient sorting sweet spot",
+    "O(n²) → Quadratic: nested loop territory",
+    "O(n³) → Cubic: triple nested loops",
+    "O(2ⁿ) → Exponential: doubles with each element added",
+    "O(n!) → Factorial: all permutations — avoid at scale",
+    "Ω (Omega) → Best-case complexity",
+    "Θ (Theta) → Tight / average-case bound",
+    "O (Big O) → Upper bound / worst-case",
+    "Space complexity → memory used, not just time",
+    "Amortized O(1) → costly ops averaged over many calls"
+  ],
+  "sorting": [
+    "Bubble Sort → O(n²) time, O(1) space",
+    "Selection Sort → O(n²) time, O(1) space",
+    "Insertion Sort → O(n²) worst, O(n) nearly-sorted",
+    "Merge Sort → O(n log n) time, O(n) space",
+    "Quick Sort → O(n log n) avg, O(n²) worst",
+    "Heap Sort → O(n log n) time, O(1) space",
+    "Counting Sort → O(n+k) time, O(k) space",
+    "Radix Sort → O(nk) — good for fixed-length keys",
+    "Tim Sort → O(n log n) — Python & Java default"
+  ],
+  "searching": [
+    "Linear Search → O(n)",
+    "Binary Search → O(log n) — array must be sorted",
+    "BFS → O(V+E) — explores level by level",
+    "DFS → O(V+E) — explores depth first",
+    "Dijkstra → O((V+E) log V) — weighted shortest path",
+    "A* → O(E log V) — heuristic pathfinding",
+    "Hash lookup → O(1) average",
+    "Trie search → O(m) where m = key length"
+  ],
+  "data-structures": [
+    "Array access → O(1)",
+    "Array search → O(n)",
+    "Array insert/delete (middle) → O(n) shift required",
+    "Dynamic array append → O(1) amortized",
+    "Linked list prepend → O(1)",
+    "Linked list access by index → O(n)",
+    "Hash table get/set → O(1) average",
+    "Hash table worst case → O(n) all collisions",
+    "BST search/insert (balanced) → O(log n)",
+    "BST unbalanced worst case → O(n)",
+    "Heap insert → O(log n)",
+    "Heap peek min/max → O(1)",
+    "Stack push/pop → O(1)",
+    "Queue enqueue/dequeue → O(1)"
+  ]
+}
