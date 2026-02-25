@@ -150,6 +150,14 @@ Each theme file under `themes/` is a plain JSON object mapping subtype names to 
 
 Want to add a theme? Drop a JSON file in `themes/<category>/`, add an entry to `lib/catalog.js`, and open a PR.
 
+## Development
+
+```bash
+npm test
+```
+
+Uses Node's built-in test runner — no dependencies to install. The suite validates catalog integrity (every theme file exists, every subtype key is present, every entry is a non-empty string) and the core `resolveTheme` logic. New themes are covered automatically.
+
 ## Roadmap
 - [ ] More languages (Japanese hiragana, Portuguese, German...)
 
