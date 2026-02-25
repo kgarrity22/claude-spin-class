@@ -1,0 +1,45 @@
+{
+  "1xx": [
+    "100 → Continue: send request body",
+    "101 → Switching Protocols: e.g. WebSocket",
+    "103 → Early Hints: preload resources"
+  ],
+  "2xx": [
+    "200 → OK: standard success",
+    "201 → Created: resource made",
+    "202 → Accepted: processing async",
+    "204 → No Content: success, no body",
+    "206 → Partial Content: range request"
+  ],
+  "3xx": [
+    "301 → Moved Permanently: update links",
+    "302 → Found: temporary redirect",
+    "304 → Not Modified: use cache",
+    "307 → Temporary Redirect: keep method",
+    "308 → Permanent Redirect: keep method"
+  ],
+  "4xx": [
+    "400 → Bad Request: malformed syntax",
+    "401 → Unauthorized: auth required",
+    "403 → Forbidden: auth won't help",
+    "404 → Not Found: resource missing",
+    "405 → Method Not Allowed",
+    "408 → Request Timeout",
+    "409 → Conflict: state mismatch",
+    "410 → Gone: permanently deleted",
+    "413 → Payload Too Large",
+    "415 → Unsupported Media Type",
+    "418 → I'm a Teapot: yes, it's real",
+    "422 → Unprocessable Entity: invalid data",
+    "429 → Too Many Requests: rate limited"
+  ],
+  "5xx": [
+    "500 → Internal Server Error",
+    "501 → Not Implemented",
+    "502 → Bad Gateway: upstream failed",
+    "503 → Service Unavailable: overloaded",
+    "504 → Gateway Timeout: upstream slow",
+    "507 → Insufficient Storage",
+    "511 → Network Auth Required"
+  ]
+}
