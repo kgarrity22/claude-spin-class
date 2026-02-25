@@ -43,6 +43,10 @@ claude-spin-class spanish:greetings    # just greetings & pleasantries
 claude-spin-class spanish:travel       # travel phrases
 claude-spin-class vietnamese           # all 90 Vietnamese entries
 claude-spin-class vietnamese:food      # Phở, Bánh mì, Gỏi cuốn...
+claude-spin-class french               # all 150 French entries
+claude-spin-class french:numbers       # includes Soixante-dix, Quatre-vingts
+claude-spin-class italian              # all 150 Italian entries
+claude-spin-class italian:verbs        # gerundio: Pensando, Leggendo...
 
 # Tech reference
 claude-spin-class http                 # all HTTP status codes (33 entries)
@@ -65,6 +69,9 @@ claude-spin-class collectives:ocean    # ocean creatures
 claude-spin-class capitals             # all 96 countries & capitals
 claude-spin-class capitals:europe      # European capitals
 claude-spin-class capitals:asia        # includes Turkey → Ankara, not Istanbul
+claude-spin-class elements             # all 118 elements (symbol · number · name)
+claude-spin-class elements:periods-1-3 # H through Ar — the essentials
+claude-spin-class elements:period-6    # includes lanthanides La through Lu
 
 # Combinations
 claude-spin-class tech                 # all tech themes (244 entries)
@@ -99,17 +106,20 @@ Vocabulary and phrases for foreign language practice.
 |-----------|---------------------------------------------------------------|---------|
 | `spanish`    | `greetings` `verbs` `travel` `food` `sports` `numbers` `time` | 175 |
 | `vietnamese` | `greetings` `numbers` `food` `travel` `phrases`               | 90  |
+| `french`     | `greetings` `verbs` `travel` `food` `numbers` `time`          | 150 |
+| `italian`    | `greetings` `verbs` `travel` `food` `numbers` `time`          | 150 |
 
-*French, Italian, and more coming soon.*
+*More languages coming soon.*
 
 ### Trivia
 General knowledge and fun facts.
 
 | Theme         | Subtypes                                               | Entries |
 |---------------|--------------------------------------------------------|---------|
-| `oscars`      | `classics` `1960s-70s` `1980s-90s` `2000s-10s` `2020s` | 97 |
-| `collectives` | `animals` `birds` `ocean` `people`                     | 61 |
-| `capitals`    | `africa` `americas` `asia` `europe` `oceania`           | 96 |
+| `oscars`      | `classics` `1960s-70s` `1980s-90s` `2000s-10s` `2020s`          | 97  |
+| `collectives` | `animals` `birds` `ocean` `people`                               | 61  |
+| `capitals`    | `africa` `americas` `asia` `europe` `oceania`                    | 96  |
+| `elements`    | `periods-1-3` `period-4` `period-5` `period-6` `period-7`        | 118 |
 
 ## How it works
 
@@ -141,8 +151,7 @@ Each theme file under `themes/` is a plain JSON object mapping subtype names to 
 Want to add a theme? Drop a JSON file in `themes/<category>/`, add an entry to `lib/catalog.js`, and open a PR.
 
 ## Roadmap
-- [ ] Trivia: periodic table of elements
-- [ ] Languages: French, Italian
+- [ ] More languages (Japanese hiragana, Portuguese, German...)
 
 ## License
 
