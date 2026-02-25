@@ -41,6 +41,8 @@ The theme is written to `~/.claude/settings.json` and persists across all future
 claude-spin-class spanish              # all 175 Spanish entries
 claude-spin-class spanish:greetings    # just greetings & pleasantries
 claude-spin-class spanish:travel       # travel phrases
+claude-spin-class vietnamese           # all 90 Vietnamese entries
+claude-spin-class vietnamese:food      # Phở, Bánh mì, Gỏi cuốn...
 
 # Tech reference
 claude-spin-class http                 # all HTTP status codes (33 entries)
@@ -60,6 +62,9 @@ claude-spin-class oscars:2020s         # recent winners
 claude-spin-class collectives          # collective nouns (a murder of crows...)
 claude-spin-class collectives:birds    # bird-specific collective nouns
 claude-spin-class collectives:ocean    # ocean creatures
+claude-spin-class capitals             # all 96 countries & capitals
+claude-spin-class capitals:europe      # European capitals
+claude-spin-class capitals:asia        # includes Turkey → Ankara, not Istanbul
 
 # Combinations
 claude-spin-class tech                 # all tech themes (244 entries)
@@ -92,7 +97,8 @@ Vocabulary and phrases for foreign language practice.
 
 | Theme     | Subtypes                                                      | Entries |
 |-----------|---------------------------------------------------------------|---------|
-| `spanish` | `greetings` `verbs` `travel` `food` `sports` `numbers` `time` | 175     |
+| `spanish`    | `greetings` `verbs` `travel` `food` `sports` `numbers` `time` | 175 |
+| `vietnamese` | `greetings` `numbers` `food` `travel` `phrases`               | 90  |
 
 *French, Italian, and more coming soon.*
 
@@ -101,10 +107,9 @@ General knowledge and fun facts.
 
 | Theme         | Subtypes                                               | Entries |
 |---------------|--------------------------------------------------------|---------|
-| `oscars`      | `classics` `1960s-70s` `1980s-90s` `2000s-10s` `2020s` | 97      |
-| `collectives` | `animals` `birds` `ocean` `people`                     | 61      |
-
-*Countries & capitals coming soon.*
+| `oscars`      | `classics` `1960s-70s` `1980s-90s` `2000s-10s` `2020s` | 97 |
+| `collectives` | `animals` `birds` `ocean` `people`                     | 61 |
+| `capitals`    | `africa` `americas` `asia` `europe` `oceania`           | 96 |
 
 ## How it works
 
@@ -136,8 +141,8 @@ Each theme file under `themes/` is a plain JSON object mapping subtype names to 
 Want to add a theme? Drop a JSON file in `themes/<category>/`, add an entry to `lib/catalog.js`, and open a PR.
 
 ## Roadmap
-- [ ] Trivia: countries & capitals, periodic table of elements
-- [ ] Languages: French, Italian, Vietnamese
+- [ ] Trivia: periodic table of elements
+- [ ] Languages: French, Italian
 
 ## License
 
