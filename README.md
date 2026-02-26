@@ -76,13 +76,18 @@ Claude Code reads `spinnerVerbs` from `~/.claude/settings.json` and cycles throu
 ```jsonc
 // ~/.claude/settings.json
 {
-  "spinnerVerbs": [
-    "400 → Bad Request: malformed syntax",
-    "401 → Unauthorized: auth required",
-    "403 → Forbidden: auth won't help"
-  ]
+  "spinnerVerbs": {
+    "mode": "replace",
+    "verbs": [
+      "400 → Bad Request: malformed syntax",
+      "401 → Unauthorized: auth required",
+      "403 → Forbidden: auth won't help"
+    ]
+  }
 }
 ```
+
+The tool always uses `"mode": "replace"` so your theme verbs are shown exclusively, rather than mixed in with Claude's defaults.
 
 ## Contributing
 
