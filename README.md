@@ -13,6 +13,9 @@ A small CLI that swaps the Claude Code spinner verbs for something worth reading
 
 It just writes to `~/.claude/settings.json`. That's the whole trick.
 
+### Example with `claude-spin-class spanish`
+<img width="262" height="80" alt="Screenshot 2026-02-26 at 1 41 49 PM" src="https://github.com/user-attachments/assets/6763f17e-90a6-48e6-9022-2690b1f846d6" />
+
 ---
 
 ## Install
