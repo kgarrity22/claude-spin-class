@@ -118,6 +118,19 @@ npm test
 
 No dependencies. Uses Node's built-in test runner. The suite validates catalog integrity (file exists, subtypes present, no empty arrays, all entries are strings) and core resolution logic. New themes get covered automatically.
 
+## CI/CD
+
+Tests run automatically on every push to `main` and on all PRs, against Node 18, 20, and 22.
+
+Releases are published to npm via [npm Trusted Publishers](https://docs.npmjs.com/generating-provenance-statements) (OIDC — no token stored in GitHub secrets). To publish a new version:
+
+```bash
+npm version patch   # or minor / major
+git push --tags
+```
+
+The tag push triggers the publish workflow, which runs tests and then publishes with provenance.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
