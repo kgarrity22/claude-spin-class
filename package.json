@@ -1,6 +1,6 @@
 {
   "name": "claude-spin-class",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Learn while Claude thinks — customizable spinner verbs for Claude Code CLI",
   "type": "module",
   "bin": {
