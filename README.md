@@ -67,10 +67,10 @@ The theme persists in `~/.claude/settings.json` until you change it.
 |---------------|------------------------------------------------------------|---------|
 | `oscars`      | `classics` `1960s-70s` `1980s-90s` `2000s-10s` `2020s`    | 97      |
 | `elements`    | `periods-1-3` `period-4` `period-5` `period-6` `period-7`  | 118     |
-| `capitals`    | `africa` `americas` `asia` `europe` `oceania`              | 96      |
+| `capitals`    | `africa` `americas` `asia` `europe` `oceania`              | 196     |
 | `collectives` | `animals` `birds` `ocean` `people`                         | 61      |
 
-You can use a category name to get everything in it (`claude-spin-class languages`), or narrow to a subtype (`claude-spin-class http:4xx`). `claude-spin-class all` loads all 1,181 entries.
+You can use a category name to get everything in it (`claude-spin-class languages`), or narrow to a subtype (`claude-spin-class http:4xx`). `claude-spin-class all` loads all 1,281 entries.
 
 ## How it works
 
