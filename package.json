@@ -4,7 +4,7 @@
   "description": "Learn while Claude thinks — customizable spinner verbs for Claude Code CLI",
   "type": "module",
   "bin": {
-    "claude-spin-class": "./bin/claude-spin-class.js"
+    "claude-spin-class": "bin/claude-spin-class.js"
   },
   "files": [
     "bin/",
@@ -29,6 +29,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kgarrity22/claude-spin-class.git"
+    "url": "git+https://github.com/kgarrity22/claude-spin-class.git"
   }
 }
